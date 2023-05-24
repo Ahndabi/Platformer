@@ -19,11 +19,11 @@ public class Monster : MonoBehaviour
 
 	private void Update()
 	{
-		Move();
-		if (!IsGroundExist())
-		{
-			Turn();
-		}
+			Move();
+			if (!IsGroundExist())
+			{
+				Turn();
+			}
 	}
 
 	public void Move()     // 입력을 받아서 움직이는 게 아닌, 그냥 계~속 움직임
@@ -38,7 +38,7 @@ public class Monster : MonoBehaviour
 
 	bool IsGroundExist()
 	{
-		Debug.DrawRay(groundCheckPoint.position, Vector2.down, Color.red);
+		Debug.DrawRay(groundCheckPoint.position, Vector2.down, Color.red);	// 레이저 그리기
 		return Physics2D.Raycast(groundCheckPoint.position, Vector2.down, 1f, groundMask);
 	}
 }

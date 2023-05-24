@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
 	}
 
 	// 실습!
-	/* 1. 충돌체로 땅바닥 체크하기
+	// 1. 충돌체로 땅바닥 체크하기
+	
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		anim.SetBool("IsGround", true);
@@ -40,11 +41,11 @@ public class Player : MonoBehaviour
 	private void OnCollisionExit2D(Collision2D collision)
 	{
 		anim.SetBool("IsGround", false);
-	}*/
+	}
 
 	private void FixedUpdate()
 	{
-		GroundCheck();		// 물리와 관련된 함수이기 때문에 FixedUpdate에서 구현
+		//GroundCheck();		// 물리와 관련된 함수이기 때문에 FixedUpdate에서 구현
 	}
 
 

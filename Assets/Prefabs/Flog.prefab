@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7880962706489843026}
   - component: {fileID: 3599297766791043955}
   m_Layer: 0
-  m_Name: Monster
+  m_Name: Flog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
